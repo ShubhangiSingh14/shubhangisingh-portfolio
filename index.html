@@ -2,204 +2,68 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Shubhangi Singh | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="icon" href="favicon.png" type="image/png">
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
     body {
-      margin: 0;
-      font-family: 'Montserrat', sans-serif;
-      background-color: #121212;
-      color: #e0e0e0;
-      scroll-behavior: smooth;
-    }
-    header, section {
-      padding: 60px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      padding: 20px;
-      background-color: #1f1f1f;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-    nav a {
-      color: #e0e0e0;
-      text-decoration: none;
-      font-weight: 700;
-      transition: color 0.3s;
-    }
-    nav a:hover {
-      color: #00bcd4;
-    }
-    h1, h2, h3 {
-      color: #00bcd4;
-    }
-    .resume-button {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 10px 20px;
-      background-color: #00bcd4;
-      color: #121212;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
-      transition: background-color 0.3s, color 0.3s;
-    }
-    .resume-button:hover {
-      background-color: #029db6;
-      color: #ffffff;
-    }
-    .scroll-indicator {
-      margin-top: 40px;
-      font-size: 2em;
-      color: #00bcd4;
-      animation: bounce 2s infinite;
-    }
-    @keyframes bounce {
-      0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-      40% { transform: translateY(10px); }
-      60% { transform: translateY(5px); }
-    }
-    footer {
+      background-color: #111;
+      color: white;
+      font-family: 'Poppins', sans-serif;
       text-align: center;
-      padding: 20px;
-      font-size: 0.9em;
-      color: #888;
-    }
-    .fade-in {
-      opacity: 0;
-      transform: translateY(20px);
-      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-    }
-    .show {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    .project a {
-      color: #82d3f8;
-      text-decoration: none;
-    }
-    .project a:hover {
-      text-decoration: underline;
+      padding: 50px 20px;
     }
 
-    /* Contact Icons */
-    .contact-icons {
+    h1 {
+      color: #00d9ff;
+      font-size: 2.5rem;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #ccc;
+      margin-bottom: 40px;
+    }
+
+    p span {
+      color: #00d9ff;
+    }
+
+    .icons-container {
       display: flex;
       justify-content: center;
-      gap: 20px;
-      margin-top: 20px;
+      gap: 40px;
     }
-    .contact-icons a {
-      background: white;
+
+    .icon {
+      background-color: white;
+      color: #00d9ff;
       border-radius: 50%;
-      width: 45px;
-      height: 45px;
+      width: 60px;
+      height: 60px;
       display: flex;
       align-items: center;
       justify-content: center;
-      text-decoration: none;
+      font-size: 1.5rem;
       transition: transform 0.3s ease;
+      text-decoration: none;
     }
-    .contact-icons a:hover {
+
+    .icon:hover {
       transform: scale(1.1);
-    }
-    .contact-icons i {
-      font-size: 20px;
-      color: #121212;
     }
   </style>
 </head>
-
 <body>
+  <h1>CONTACT</h1>
+  <p>Feel free to <span>connect</span> with me on</p>
 
-<nav>
-  <a href="#home">Home</a>
-  <a href="#about">About</a>
-  <a href="#experience">Experience</a>
-  <a href="#projects">Projects</a>
-  <a href="#contact">Contact</a>
-</nav>
-
-<header id="home" class="fade-in">
-  <h1>Shubhangi Singh</h1>
-  <p>Software Engineer | Java & MuleSoft Developer</p>
-  <a href="ShubhangiSingh.pdf" download class="resume-button">Download Resume</a>
-  <div class="scroll-indicator">&#8595;</div>
-</header>
-
-<section id="about" class="fade-in">
-  <h2>About Me</h2>
-  <p>I'm a Software Engineer with 3 years of IT experience, passionate about crafting seamless backend solutions using Java, Spring Boot, and MuleSoft. I aim to deliver high-quality, efficient software systems with a continuous learning mindset.</p>
-  <p><strong>Education:</strong> B.Tech (Computer Science), Shri Ramswaroop Memorial University (2018–2022)</p>
-  <p><strong>Technical Skills:</strong> Java, Spring Boot, Microservices, MuleSoft, HTML, CSS, SQL, Azure DevOps, IBM MQ Server</p>
-</section>
-
-<section id="experience" class="fade-in">
-  <h2>Experience</h2>
-  <h3>Software Engineer | Coforge</h3>
-  <p>Sep 2022 – Present</p>
-  <p>Developed and optimized API integrations and batch processes on MuleSoft and Azure DevOps, implementing code fixes, RCA solutions, and proactive system monitoring.</p>
-
-  <h3>Graduate Engineer Trainee | Coforge</h3>
-  <p>Mar 2022 – Sep 2022</p>
-  <p>Built strong foundations in Java, Spring Boot, and SQL through hands-on backend development and training.</p>
-</section>
-
-<section id="projects" class="fade-in">
-  <h2>Projects</h2>
-  <div class="project">
-    <h3>Blue Brick Hunter Game</h3>
-    <p>Developed a collision-based paddle game using C and Artificial Intelligence techniques.</p>
-    <a href="https://github.com/ShubhangiSingh14/Blue-Brick-Hunter-Game" target="_blank">View Project</a>
+  <div class="icons-container">
+    <a href="https://github.com/ShubhangiSingh14" class="icon" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="mailto:shubhangi@example.com" class="icon"><i class="fas fa-envelope"></i></a>
+    <a href="https://www.linkedin.com/in/shubhangi-singh/" class="icon" target="_blank"><i class="fab fa-linkedin-in"></i></a>
   </div>
-  <div class="project">
-    <h3>Online Bookstore Microservices</h3>
-    <p>Spring Boot-based Online Bookstore project using a Microservices architecture, where each service is independently deployable and connected via Eureka Discovery Server.</p>
-    <a href="https://github.com/ShubhangiSingh14/Blood-Bank-and-Management-System" target="_blank">View Project</a>
-  </div>
-</section>
-
-<section id="contact" class="fade-in">
-  <h2>Contact</h2>
-  <div class="contact-icons">
-    <a href="https://github.com/ShubhangiSingh14" target="_blank">
-      <i class="fab fa-github"></i>
-    </a>
-    <a href="mailto:singhshubhangi279@gmail.com">
-      <i class="fas fa-envelope"></i>
-    </a>
-    <a href="https://linkedin.com/in/1shubhangisingh" target="_blank">
-      <i class="fab fa-linkedin-in" style="color:#0077b5;"></i>
-    </a>
-  </div>
-</section>
-
-<footer>
-  &copy; 2025 Shubhangi Singh | Portfolio
-</footer>
-
-<!-- Fade-in Animation Script -->
-<script>
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('show');
-      }
-    });
-  });
-
-  const hiddenElements = document.querySelectorAll('.fade-in');
-  hiddenElements.forEach(el => observer.observe(el));
-</script>
-
 </body>
 </html>
