@@ -6,16 +6,7 @@
   <title>Shubhangi Singh | Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link rel="icon" href="favicon.png" type="image/png">
-
-  <!-- Font Awesome for logos -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    integrity="sha512-MrU6smv6zCkl9jYRB2lP8M5TohESdWkfjqVf63oAV5EGU1smEQVo15GJWIm5S3U7CTkkUQKhhYh69rjW+DQe1g=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
-
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <style>
     body {
       margin: 0;
@@ -24,13 +15,11 @@
       color: #e0e0e0;
       scroll-behavior: smooth;
     }
-
     header, section {
       padding: 60px 20px;
       max-width: 1000px;
       margin: auto;
     }
-
     nav {
       display: flex;
       justify-content: center;
@@ -41,22 +30,18 @@
       top: 0;
       z-index: 1000;
     }
-
     nav a {
       color: #e0e0e0;
       text-decoration: none;
       font-weight: 700;
       transition: color 0.3s;
     }
-
     nav a:hover {
       color: #00bcd4;
     }
-
     h1, h2, h3 {
       color: #00bcd4;
     }
-
     .resume-button {
       display: inline-block;
       margin-top: 20px;
@@ -68,99 +53,68 @@
       font-weight: bold;
       transition: background-color 0.3s, color 0.3s;
     }
-
     .resume-button:hover {
       background-color: #029db6;
       color: #ffffff;
     }
-
     .scroll-indicator {
       margin-top: 40px;
       font-size: 2em;
       color: #00bcd4;
       animation: bounce 2s infinite;
     }
-
     @keyframes bounce {
       0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
       40% { transform: translateY(10px); }
       60% { transform: translateY(5px); }
     }
-
     footer {
       text-align: center;
       padding: 20px;
       font-size: 0.9em;
       color: #888;
     }
-
     .fade-in {
       opacity: 0;
       transform: translateY(20px);
       transition: opacity 0.6s ease-out, transform 0.6s ease-out;
     }
-
     .show {
       opacity: 1;
       transform: translateY(0);
     }
-
     .project a {
       color: #82d3f8;
       text-decoration: none;
     }
-
     .project a:hover {
       text-decoration: underline;
     }
 
-    /* CONTACT SECTION */
-    #contact {
-      text-align: center;
-      padding: 50px 20px;
-      color: white;
-    }
-
-    #contact h1 {
-      color: #00d9ff;
-      font-size: 2.5rem;
-      font-weight: 800;
-      margin-bottom: 10px;
-    }
-
-    #contact p {
-      font-size: 1.2rem;
-      color: #ccc;
-      margin-bottom: 40px;
-    }
-
-    #contact p span {
-      color: #00d9ff;
-    }
-
-    .icons-container {
+    /* Contact Icons */
+    .contact-icons {
       display: flex;
-      flex-direction: column;
-      align-items: center;
+      justify-content: center;
       gap: 20px;
+      margin-top: 20px;
     }
-
-    .icon {
-      background-color: white;
-      color: #00bcd4;
+    .contact-icons a {
+      background: white;
       border-radius: 50%;
-      width: 60px;
-      height: 60px;
+      width: 45px;
+      height: 45px;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 1.5rem;
-      transition: transform 0.3s ease;
       text-decoration: none;
+      transition: transform 0.3s ease;
     }
-
-    .icon:hover {
+    .contact-icons a:hover {
       transform: scale(1.1);
+    }
+    .contact-icons i {
+      font-size: 20px;
+      color: #121212;
     }
   </style>
 </head>
@@ -214,14 +168,18 @@
   </div>
 </section>
 
-<!-- UPDATED CONTACT SECTION -->
 <section id="contact" class="fade-in">
-  <h1>CONTACT</h1>
-  <p>Feel free to <span>connect</span> with me on</p>
-  <div class="icons-container">
-    <a href="https://github.com/ShubhangiSingh14" class="icon" target="_blank"><i class="fab fa-github"></i></a>
-    <a href="mailto:singhshubhangi279@gmail.com" class="icon"><i class="fas fa-envelope"></i></a>
-    <a href="https://linkedin.com/in/1shubhangisingh" class="icon" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+  <h2>Contact</h2>
+  <div class="contact-icons">
+    <a href="https://github.com/ShubhangiSingh14" target="_blank">
+      <i class="fab fa-github"></i>
+    </a>
+    <a href="mailto:singhshubhangi279@gmail.com">
+      <i class="fas fa-envelope"></i>
+    </a>
+    <a href="https://linkedin.com/in/1shubhangisingh" target="_blank">
+      <i class="fab fa-linkedin-in" style="color:#0077b5;"></i>
+    </a>
   </div>
 </section>
 
