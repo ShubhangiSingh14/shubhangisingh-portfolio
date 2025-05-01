@@ -1,11 +1,15 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shubhangi Singh | Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="icon" href="favicon.png" type="image/png"> <!-- optional: you can remove this line if not using favicon -->
+  <link rel="icon" href="favicon.png" type="image/png">
+
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <style>
     body {
       margin: 0;
@@ -42,8 +46,11 @@
       color: #00bcd4;
     }
     .resume-button {
-      display: inline-block;
-      margin-top: 20px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 10px;
       padding: 10px 20px;
       background-color: #00bcd4;
       color: #121212;
@@ -144,9 +151,15 @@
 <section id="contact" class="fade-in">
   <h2>Contact</h2>
   <div style="display: flex; flex-direction: column; align-items: center; gap: 15px; margin-top: 20px;">
-    <a href="https://github.com/ShubhangiSingh14" target="_blank" class="resume-button">GitHub</a>
-    <a href="mailto:singhshubhangi279@gmail.com" class="resume-button">Gmail</a>
-    <a href="https://linkedin.com/in/1shubhangisingh" target="_blank" class="resume-button">LinkedIn</a>
+    <a href="https://github.com/ShubhangiSingh14" target="_blank" class="resume-button">
+      <i class="fab fa-github"></i> GitHub
+    </a>
+    <a href="mailto:singhshubhangi279@gmail.com" class="resume-button">
+      <i class="fas fa-envelope"></i> Gmail
+    </a>
+    <a href="https://linkedin.com/in/1shubhangisingh" target="_blank" class="resume-button">
+      <i class="fab fa-linkedin"></i> LinkedIn
+    </a>
   </div>
 </section>
 
@@ -154,7 +167,6 @@
   &copy; 2025 Shubhangi Singh | Portfolio
 </footer>
 
-<!-- Fade-in Animation Script -->
 <script>
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
