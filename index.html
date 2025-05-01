@@ -6,9 +6,7 @@
   <title>Shubhangi Singh | Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link rel="icon" href="favicon.png" type="image/png">
-
-  <!-- Font Awesome for Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- Font Awesome -->
 
   <style>
     body {
@@ -46,11 +44,8 @@
       color: #00bcd4;
     }
     .resume-button {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      margin-top: 10px;
+      display: inline-block;
+      margin-top: 20px;
       padding: 10px 20px;
       background-color: #00bcd4;
       color: #121212;
@@ -95,6 +90,32 @@
     }
     .project a:hover {
       text-decoration: underline;
+    }
+
+    /* Contact Icons */
+    .contact-icons {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      margin-top: 20px;
+    }
+    .contact-icons a {
+      background: white;
+      border-radius: 50%;
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      text-decoration: none;
+      transition: transform 0.3s;
+    }
+    .contact-icons a:hover {
+      transform: scale(1.1);
+    }
+    .contact-icons i {
+      font-size: 24px;
     }
   </style>
 </head>
@@ -148,17 +169,18 @@
   </div>
 </section>
 
-<section id="contact" class="fade-in">
-  <h2>Contact</h2>
-  <div style="display: flex; flex-direction: column; align-items: center; gap: 15px; margin-top: 20px;">
-    <a href="https://github.com/ShubhangiSingh14" target="_blank" class="resume-button">
-      <i class="fab fa-github"></i> GitHub
+<section id="contact" class="fade-in" style="text-align: center;">
+  <h2 style="font-size: 2em;">LET'S CONNECT</h2>
+  <p style="color: #ccc;">Feel free to <span style="color: #00bcd4;">connect</span> with me on</p>
+  <div class="contact-icons">
+    <a href="https://github.com/ShubhangiSingh14" target="_blank">
+      <i class="fab fa-github" style="color: #121212;"></i>
     </a>
-    <a href="mailto:singhshubhangi279@gmail.com" class="resume-button">
-      <i class="fas fa-envelope"></i> Gmail
+    <a href="mailto:singhshubhangi279@gmail.com">
+      <i class="fas fa-envelope" style="color: #121212;"></i>
     </a>
-    <a href="https://linkedin.com/in/1shubhangisingh" target="_blank" class="resume-button">
-      <i class="fab fa-linkedin"></i> LinkedIn
+    <a href="https://linkedin.com/in/1shubhangisingh" target="_blank">
+      <i class="fab fa-linkedin-in" style="color: #0077b5;"></i>
     </a>
   </div>
 </section>
@@ -167,6 +189,7 @@
   &copy; 2025 Shubhangi Singh | Portfolio
 </footer>
 
+<!-- Fade-in Animation Script -->
 <script>
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
